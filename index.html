@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi página</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f7f7f5;
+            color: #222;
+            font-family: Georgia, serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+            font-weight: normal;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .entrada {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 100px;
+            align-items: start;
+        }
+
+        .video {
+            width: 100%;
+        }
+
+        .video video {
+            width: 100%;
+            display: block;
+        }
+
+        .texto {
+            font-size: 19px;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 700px) {
+            .entrada {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                margin-bottom: 70px;
+            }
+
+            header {
+                padding: 35px 20px;
+            }
+
+            header h1 {
+                font-size: 34px;
+            }
+
+            .texto {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>PABLO AMORES</h1>
+    </header>
+
+    <main>
+
+        <article class="entrada">
+
+            <div class="video">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Tu navegador no puede reproducir este vídeo.
+                </video>
+            </div>
+
+            <div class="texto">
+                <p>
+                    Aquí irá tu poema, relato o texto.
+                </p>
+
+                <p>
+                    Puedes escribir todo lo que quieras. El texto aparecerá
+                    junto al vídeo en ordenador y debajo del vídeo en móvil.
+                </p>
+            </div>
+
+        </article>
+
+    </main>
+
+</body>
+</html>
